@@ -19,8 +19,7 @@ export default class Halls extends Component {
 
   render() {
     const { getVenue }=this.context;
-     const venue = getVenue(this.state.Hall);
-   // const venue=this.props.match.params.Hall;
+    const venue = getVenue(this.state.Hall);
 
     if(!venue){
       return( <div className='error'>
@@ -66,6 +65,7 @@ export default class Halls extends Component {
               <h3>info</h3>
               <h6>price : ${price}</h6>
               <h6>type : {type} SQFT</h6>
+
               <h6>max capacity : {capacity} people
               </h6>
               <h6>discounts: {discount}%</h6>
