@@ -20,7 +20,6 @@ export default class Halls extends Component {
   render() {
     const { getVenue }=this.context;
     const venue = getVenue(this.state.Hall);
-    // const venue=this.props.match.params.Hall;
 
     if(!venue){
       return( <div className='error'>
@@ -37,8 +36,9 @@ export default class Halls extends Component {
       type,
       price,
       extras,
-      breakfast,
-      pets,
+      events,
+      food,
+      discount,
       images}=venue;
       const [mainImg,...defaultImg]=images;
     return (
@@ -65,12 +65,11 @@ export default class Halls extends Component {
               <h3>info</h3>
               <h6>price : ${price}</h6>
               <h6>type : {type} SQFT</h6>
-              <h6>
-                max capacity :
-                {capacity > 1 ? `${capacity} people` : `${capacity} person`}
+
+              <h6>max capacity : {capacity} people
               </h6>
-              <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-              <h6>{breakfast && "free breakfast included"}</h6>
+              <h6>discounts: {discount}%</h6>
+             
             </article>
           </div>
         </section>
@@ -78,6 +77,22 @@ export default class Halls extends Component {
           <h6>extras </h6>
           <ul className="extras">
             {extras.map((item, index) => (
+              <li key={index}>- {item}</li>
+            ))}
+          </ul>
+        </section>
+        <section className="venue-extras">
+          <h6>Events </h6>
+          <ul className="extras">
+            {events.map((item, index) => (
+              <li key={index}>- {item}</li>
+            ))}
+          </ul>
+        </section>
+        <section className="venue-extras">
+          <h6>Foods </h6>
+          <ul className="extras">
+            {food.map((item, index) => (
               <li key={index}>- {item}</li>
             ))}
           </ul>
