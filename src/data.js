@@ -26,7 +26,7 @@ export default [
       Hall: "Babu Naik Hall",// used in browse page of all venues(with filters) & each venue browse page
       type: "Temple Hall", //Filter
       events: ["Wedding", "Birthday","Thread ceremony","Anniversary","Others"],//Filter
-      food: ["Veg only", "Veg\NonVeg"],//Filter
+      food: ["Veg only", "Veg/NonVeg"],//Filter
       price: 15000,//Filter
       discount: 10,// use this for showing discounted rates from original rate
       capacity: 1000,//Filter
@@ -82,7 +82,7 @@ export default [
         Hall: "Math Hall",// used in browse page of all venues(with filters) & each venue browse page
         type: "Private Hall", //Filter
         events: ["Wedding", "Anniversary","Others"],//Filter
-        food: ["Veg only", "Veg\NonVeg"],//Filter
+        food: ["Veg only", "Veg/NonVeg"],//Filter
         price: 15000,//Filter
         discount: 10,// use this for showing discounted rates from original rate
         capacity: 1000,//Filter
@@ -131,14 +131,14 @@ export default [
   },
   {
     sys: {
-      id: "2"
+      id: "3"
     },
     fields: {
         name: "Holiday Inn Hall",// used in browse page of all venues(with filters)& and each venue browse title
         Hall: "Holiday In the Five start residency",// used in browse page of all venues(with filters) & each venue browse page
         type: "Beach Resort", //Filter
         events: ["Wedding", "Anniversary","Others","Office Conferences","Birthday"],//Filter
-        food: ["Veg only", "Veg\NonVeg","Nonveg+Alcohol"],//Filter
+        food: ["Veg only", "Veg/NonVeg","Nonveg+Alcohol"],//Filter
         price: 15000,//Filter
         discount: 10,// use this for showing discounted rates from original rate
         capacity: 1000,//Filter
@@ -187,7 +187,7 @@ export default [
   },
   {
     sys: {
-      id: "2"
+      id: "4"
     },
     fields: {
         name: "Hotel 8 Inn Hall",// used in browse page of all venues(with filters)& and each venue browse title
@@ -243,7 +243,7 @@ export default [
   },
   {
     sys: {
-      id: "2"
+      id: "5"
     },
     fields: {
         name: "Mangueshi Hall",// used in browse page of all venues(with filters)& and each venue browse title
@@ -299,7 +299,7 @@ export default [
   },
   {
     sys: {
-      id: "2"
+      id: "6"
     },
     fields: {
         name: "Nagueshi Hall",// used in browse page of all venues(with filters)& and each venue browse title
@@ -355,7 +355,7 @@ export default [
   },
   {
     sys: {
-      id: "2"
+      id: "7"
     },
     fields: {
         name: "Dattaraj Hall",// used in browse page of all venues(with filters)& and each venue browse title
