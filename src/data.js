@@ -82,7 +82,7 @@ export default [
         Hall: "Math Hall",// used in browse page of all venues(with filters) & each venue browse page
         type: "Private Hall", //Filter
         events: ["Wedding", "Anniversary","Others"],//Filter
-        food: ["Veg only", "Veg\NonVeg"],//Filter
+        food: ["Veg only", "Veg/NonVeg"],//Filter
         price: 15000,//Filter
         discount: 10,// use this for showing discounted rates from original rate
         capacity: 1000,//Filter
