@@ -17,8 +17,15 @@ const VenueFilter = ({ Venue }) => {
     price,
     minPrice,
     maxPrice,
-    events,
-    food
+    wedding,
+    birthday,
+    threadceremony,
+    anniversary,
+    others,
+    officeconferences,
+    veg,
+    nveg,
+    anveg
   } = context;
 
   // get unique types
@@ -73,7 +80,7 @@ const VenueFilter = ({ Venue }) => {
         {/* end of guests */}
         {/* room price */}
         <div className="form-group">
-          <label htmlFor="price">room price ${price}</label>
+          <label htmlFor="price">room price Rs: {price}</label>
           <input
             type="range"
             name="price"
@@ -113,20 +120,28 @@ const VenueFilter = ({ Venue }) => {
           <div className="single-extra">
             <input
               type="checkbox"
-              name="food"
-              id="food"
-              checked={food}
+              name="veg"
+              id="veg"
+              checked={veg}
               onChange={handleChange}
             />
-            <label htmlFor="food">Veg</label><br></br>
+            <label htmlFor="veg">Veg</label><br></br>
             <input
               type="checkbox"
-              name="food"
-              id="food"
-              checked={food}
+              name="nveg"
+              id="nveg"
+              checked={nveg}
               onChange={handleChange}
             />
-            <label htmlFor="food">Non veg/Veg</label>
+            <label htmlFor="nveg">Non veg/Veg</label><br/>
+            <input
+              type="checkbox"
+              name="anveg"
+              id="anveg"
+              checked={anveg}
+              onChange={handleChange}
+            />
+            <label htmlFor="anveg">Alcohol+Non Veg</label>
           </div>
           </div>
           <div className="form-group">
@@ -134,52 +149,52 @@ const VenueFilter = ({ Venue }) => {
           <div className="single-extra">
             <input
               type="checkbox"
-              name="events"
-              id="events"
-              checked={events}
+              name="wedding"
+              id="wedding"
+              checked={wedding}
               onChange={handleChange}
             />
-            <label htmlFor="events">Wedding</label><br></br>
+            <label htmlFor="wedding">Wedding</label><br></br>
             <input
               type="checkbox"
-              name="events"
-              id="events"
-              checked={events}
+              name="birthday"
+              id="birthday"
+              checked={birthday}
               onChange={handleChange}
             />
-            <label htmlFor="events">Birthday</label><br/>
+            <label htmlFor="birthday">Birthday</label><br/>
             <input
               type="checkbox"
-              name="events"
-              id="events"
-              checked={events}
+              name="threadceremony"
+              id="threadceremony"
+              checked={threadceremony}
               onChange={handleChange}
             />
-            <label htmlFor="events">Thread Cermony</label><br/>
+            <label htmlFor="threadceremony">Thread Cermony</label><br/>
             <input
               type="checkbox"
-              name="events"
-              id="events"
-              checked={events}
+              name="anniversary"
+              id="anniversary"
+              checked={anniversary}
               onChange={handleChange}
             />
-            <label htmlFor="events">Anniversary</label><br/>
+            <label htmlFor="anniversary">Anniversary</label><br/>
             <input
               type="checkbox"
-              name="events"
-              id="events"
-              checked={events}
+              name="officeconferences"
+              id="officeconferences"
+              checked={officeconferences}
               onChange={handleChange}
             />
-            <label htmlFor="events">Office Conferences</label><br/>
+            <label htmlFor="officeconferences">Office Conferences</label><br/>
             <input
               type="checkbox"
-              name="events"
-              id="events"
-              checked={events}
+              name="others"
+              id="others"
+              checked={others}
               onChange={handleChange}
             />
-            <label htmlFor="events">Others</label><br/>
+            <label htmlFor="others">Others</label><br/>
           </div>
           </div>
           {/*<div className="single-extra">

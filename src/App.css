@@ -21,7 +21,8 @@ body {
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.4; }
+  line-height: 1.4;
+ }
 
 h1 {
   font-size: 3em;
@@ -429,7 +430,7 @@ h6 {
 
 .Venuelist-center {
   margin: 0 auto;
-  display: inline;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 40px; 
@@ -460,9 +461,9 @@ h6 {
   /* padding 5 px */
   margin: 0 auto;
   display: inline;
-  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
   grid-row-gap: 2rem;
-  grid-column-gap: 40px; }
+  grid-column-gap: 40px; */} 
 
 .form-group {
   text-transform: capitalize; }
