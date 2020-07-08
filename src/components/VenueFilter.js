@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { VenueContext } from "../context";
-import Title from "./Title";
+// import Title from "./Title";
 // get all unique values
 const getUnique = (items, value) => {
   return [...new Set(items.map(item => item[value]))];
@@ -17,10 +17,8 @@ const VenueFilter = ({ Venue }) => {
     price,
     minPrice,
     maxPrice,
-    minSize,
-    maxSize,
-    breakfast,
-    pets
+    events,
+    food
   } = context;
 
   // get unique types
@@ -42,17 +40,18 @@ const VenueFilter = ({ Venue }) => {
   ));
   return (
     <section className="filter-container">
-      <Title title="Filter By:" />
+      {/* <Title title="Filter By:" /> */}
+      <h5>Filter By:</h5>
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="type">room type</label>
+          <label htmlFor="type">Hall type</label>
           <select
             name="type"
             id="type"
             onChange={handleChange}
             className="form-control"
-            value={type}
+            value= {type}
           >
             {types}
           </select>
@@ -88,8 +87,8 @@ const VenueFilter = ({ Venue }) => {
         </div>
         {/* end of room price*/}
         {/* size */}
-        <div className="form-group">
-          <label htmlFor="price">room size </label>
+        {/* <div className="form-group"> */}
+          {/* <label htmlFor="price">room size </label>
           <div className="size-inputs">
             <input
               type="number"
@@ -106,21 +105,84 @@ const VenueFilter = ({ Venue }) => {
               className="size-input"
             />
           </div>
-        </div>
+        </div> */}
         {/* end of select type */}
         {/* extras */}
-        <div className="form-group">
+         <div className="form-group">
+         <label htmlFor="food">Food:</label>
           <div className="single-extra">
             <input
               type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={breakfast}
+              name="food"
+              id="food"
+              checked={food}
               onChange={handleChange}
             />
-            <label htmlFor="breakfast">breakfast</label>
+            <label htmlFor="food">Veg</label><br></br>
+            <input
+              type="checkbox"
+              name="food"
+              id="food"
+              checked={food}
+              onChange={handleChange}
+            />
+            <label htmlFor="food">Non veg/Veg</label>
           </div>
+          </div>
+          <div className="form-group">
+         <label htmlFor="events">Events:</label>
           <div className="single-extra">
+            <input
+              type="checkbox"
+              name="events"
+              id="events"
+              checked={events}
+              onChange={handleChange}
+            />
+            <label htmlFor="events">Wedding</label><br></br>
+            <input
+              type="checkbox"
+              name="events"
+              id="events"
+              checked={events}
+              onChange={handleChange}
+            />
+            <label htmlFor="events">Birthday</label><br/>
+            <input
+              type="checkbox"
+              name="events"
+              id="events"
+              checked={events}
+              onChange={handleChange}
+            />
+            <label htmlFor="events">Thread Cermony</label><br/>
+            <input
+              type="checkbox"
+              name="events"
+              id="events"
+              checked={events}
+              onChange={handleChange}
+            />
+            <label htmlFor="events">Anniversary</label><br/>
+            <input
+              type="checkbox"
+              name="events"
+              id="events"
+              checked={events}
+              onChange={handleChange}
+            />
+            <label htmlFor="events">Office Conferences</label><br/>
+            <input
+              type="checkbox"
+              name="events"
+              id="events"
+              checked={events}
+              onChange={handleChange}
+            />
+            <label htmlFor="events">Others</label><br/>
+          </div>
+          </div>
+          {/*<div className="single-extra">
             <input
               type="checkbox"
               name="pets"
@@ -129,7 +191,7 @@ const VenueFilter = ({ Venue }) => {
             />
             <label htmlFor="breakfast">pets</label>
           </div>
-        </div>
+        </div> */}
         {/* end of extras type */}
       </form>
     </section>

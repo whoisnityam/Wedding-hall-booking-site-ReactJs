@@ -356,6 +356,7 @@ h6 {
 .single-venue-images {
   width: 80vw;
   margin: 0 auto;
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-row-gap: 2rem;
@@ -363,7 +364,7 @@ h6 {
 
 .single-venue-images img {
   width: 100%;
-  display: block; }
+  display: grid; }
 
 .single-venue-info {
   width: 80vw;
@@ -409,8 +410,8 @@ h6 {
   .single-venue-images,
   .single-venue-info,
   .venue-extras {
-    width: 20px;
-    max-width: 100px; }
+    width: 95vw;
+    max-width: 1170px; }
   .single-venue-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -421,16 +422,18 @@ h6 {
 /* end of single venue*/
 /* venuelist */
 .Venuelist {
-  padding: 5rem;
-  /* width:80% */
- float: right;
- box-sizing: border-box; }
+  padding: 5rem 0;
+  float: right;
+  width: 80%;
+  box-sizing: border-box; }
 
 .Venuelist-center {
-  width: 70%;
   margin: 0 auto;
-  display: inline-block;
-
+  display: inline;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px; 
+  padding-inline-start: 1;
 }
 
 @media screen and (min-width: 776px) {
@@ -445,7 +448,7 @@ h6 {
 /*  Venue fitler*/
 .filter-container {
    margin: 20px;
-  padding: 5 px;
+  padding: 10px;
    float:left;
    width:20% ;
    background-color: #dad9d9;
@@ -454,6 +457,7 @@ h6 {
 
 .filter-form {
   /* width: 60vw; */
+  /* padding 5 px */
   margin: 0 auto;
   display: inline;
   grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
