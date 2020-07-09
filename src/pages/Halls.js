@@ -4,7 +4,9 @@ import defaultBcg from '../images/Venue2.jpg'
 import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
 import {VenueContext} from '../context'
-import StyledHero from '../components/StyledHero'
+import StyledHero from "../components/StyledHero"
+import Form from "../components/Form"
+import Title from '../components/Title'
 export default class Halls extends Component {
   constructor(props){
     super(props);
@@ -96,6 +98,12 @@ export default class Halls extends Component {
               <li key={index}>- {item}</li>
             ))}
           </ul>
+        </section>
+
+        <section className="BForm">
+          <Title title="Reservation Details"/><br/>
+          <Form/>
+
         </section>
       </>
     )

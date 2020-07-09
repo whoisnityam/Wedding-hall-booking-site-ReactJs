@@ -425,16 +425,49 @@ h6 {
 .Venuelist {
   padding: 5rem 0;
   float: right;
-  width: 80%;
+  /* width: 80%; */
+  height: 30%;
   box-sizing: border-box; }
 
 .Venuelist-center {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 40px; 
-  padding-inline-start: 1;
+  padding-inline-start: 1; */
+}
+
+/* Forms */
+
+.BForm{
+  background-color: #cfcfcf;
+  /* text-align: center; */
+  border: 3px solid #af9a7d;
+  width: 40%;
+}
+input[type=text], input[type=email], input[type=number], input[type=date]{
+ width:100%;
+ padding: 5px 22px;
+ margin: 10px 0px;
+ box-sizing: border-box;
+ border: 2px solid black;
+ text-align: center;
+}
+input[type=submit]{
+  border: none;
+  color:white;
+  background-color: #af9a7d;
+  padding: 8px 36px;
+  text-decoration: none;
+  border: 2px solid black;
+  margin: 5px 4px;
+  cursor: pointer;
+}
+
+label{
+  text-align: right;
 }
 
 @media screen and (min-width: 776px) {
