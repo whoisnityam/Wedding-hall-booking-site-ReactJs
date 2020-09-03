@@ -1,4 +1,3 @@
-import Venue1 from "./images/details-1.jpeg";
 import Venue2 from "./images/details-2.jpg";
 import Venue3 from "./images/details-3.jpeg";
 import Venue4 from "./images/details-4.jpeg";
@@ -9,11 +8,7 @@ import img4 from "./images/Venue-4.jpeg";
 import img5 from "./images/Venue-5.jpeg";
 import img6 from "./images/Venue-6.jpeg";
 import img7 from "./images/Venue-7.jpg";
-import img8 from "./images/Venue-8.jpg";
-import img9 from "./images/Venue-9.jpeg";
-import img10 from "./images/Venue-10.jpeg";
-import img11 from "./images/Venue-11.jpeg";
-import img12 from "./images/Venue-12.jpg";
+
 
 
 export default [
@@ -29,7 +24,7 @@ export default [
       wedding:true,
       birthday: true,
       threadceremony:true,
-      anniversary:true,
+       anniversary:true,
       others:true,
       officeconferences:false,
       food: ["Veg only", "Veg/NonVeg"],//Filter

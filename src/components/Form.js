@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-
-export default class Form extends Component {
-
+// var data={};
+ export default class Form extends Component {
+ 
+ 
 
 state={
     date:'',
@@ -57,7 +58,7 @@ handlePhone = (e)=>{
 formSubmit=(e)=>{
   e.preventDefault();
  
- 
+  alert('submitted');
   
   let data = {
     date:this.state.date,
@@ -154,3 +155,5 @@ resetForm=()=>{
         )
     }
 }
+
+// export {Form, data};

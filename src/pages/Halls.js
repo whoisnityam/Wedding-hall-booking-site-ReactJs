@@ -65,7 +65,7 @@ export default class Halls extends Component {
             </article>
             <article className="info">
               <h3>info</h3>
-              <h6>price : ${price}</h6>
+              <h6>price : Rs{price}</h6>
               <h6>type : {type} SQFT</h6>
 
               <h6>max capacity : {capacity} people
