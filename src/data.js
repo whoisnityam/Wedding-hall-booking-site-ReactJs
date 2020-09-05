@@ -26,7 +26,16 @@ export default [
       Hall: "Babu Naik Hall",// used in browse page of all venues(with filters) & each venue browse page
       type: "Temple Hall", //Filter
       events: ["Wedding", "Birthday","Thread ceremony","Anniversary","Others"],//Filter
+      wedding:true,
+      birthday: true,
+      threadceremony:true,
+      anniversary:true,
+      others:true,
+      officeconferences:false,
       food: ["Veg only", "Veg/NonVeg"],//Filter
+      veg: true,
+      nveg: true,
+      anveg: false,
       price: 15000,//Filter
       discount: 10,// use this for showing discounted rates from original rate
       capacity: 1000,//Filter
@@ -81,12 +90,21 @@ export default [
         name: "Math Hall",// used in browse page of all venues(with filters)& and each venue browse title
         Hall: "Math Hall",// used in browse page of all venues(with filters) & each venue browse page
         type: "Private Hall", //Filter
-        events: ["Wedding", "Anniversary","Others"],//Filter
+        events: ["Wedding", "Anniversary","Others"],//Filter      
+        wedding:true,
+        birthday: false,
+        threadceremony:false,
+        anniversary:false,
+        others:true,
+        officeconferences:false,
         food: ["Veg only", "Veg/NonVeg"],//Filter
+        veg: true,
+        nveg: true,
+        anveg: false,
         price: 15000,//Filter
         discount: 10,// use this for showing discounted rates from original rate
         capacity: 1000,//Filter
-        featured: true,// these will show up in main page
+        featured: false,// these will show up in main page
         description:// Description used in Venue overview page
           "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
         extras: [// Show this under Overview in bullet points
@@ -138,7 +156,16 @@ export default [
         Hall: "Holiday In the Five start residency",// used in browse page of all venues(with filters) & each venue browse page
         type: "Beach Resort", //Filter
         events: ["Wedding", "Anniversary","Others","Office Conferences","Birthday"],//Filter
+        wedding:true,
+        birthday: true,
+        threadceremony:false,
+        anniversary:true,
+        others:true,
+        officeconferences:true,
         food: ["Veg only", "Veg/NonVeg","Nonveg+Alcohol"],//Filter
+        veg: true,
+        nveg: true,
+        anveg: true,
         price: 15000,//Filter
         discount: 10,// use this for showing discounted rates from original rate
         capacity: 1000,//Filter
@@ -157,7 +184,7 @@ export default [
         {
           fields: {
             file: {
-              url: img2
+              url: img3
             }
           }
         },
@@ -194,7 +221,16 @@ export default [
         Hall: "Hotel 8 affordable residency",// used in browse page of all venues(with filters) & each venue browse page
         type: "Hotel hall", //Filter
         events: ["Wedding", "Anniversary","Others","Office Conferences","Birthday"],//Filter
-        food: ["Veg only", "Veg\NonVeg","Nonveg+Alcohol"],//Filter
+        wedding:true,
+        birthday: true,
+        threadceremony:false,
+        anniversary:true,
+        others:true,
+        officeconferences:true,
+        food: ["Veg only", "Veg/NonVeg","Nonveg+Alcohol"],//Filter
+        veg: true,
+        nveg: true,
+        anveg: true,
         price: 20000,//Filter
         discount: 15,// use this for showing discounted rates from original rate
         capacity: 1000,//Filter
@@ -213,7 +249,7 @@ export default [
         {
           fields: {
             file: {
-              url: img2
+              url: img4
             }
           }
         },
@@ -250,11 +286,21 @@ export default [
         Hall: "Mangueshi Temple Hall",// used in browse page of all venues(with filters) & each venue browse page
         type: "Temple Hall", //Filter
         events: ["Wedding", "Thread Ceremony"],//Filter
+        wedding:true,
+        birthday: false,
+        threadceremony:true,
+        anniversary:false,
+        others:false,
+        officeconferences:false,
         food: ["Veg only"],//Filter
+        veg: true,
+        nveg: false,
+        anveg: false,
+        // food: ["Veg only"],//Filter
         price: 5000,//Filter
         discount: 15,// use this for showing discounted rates from original rate
         capacity: 1000,//Filter
-        featured: true,// these will show up in main page
+        featured: false,// these will show up in main page
         description:// Description used in Venue overview page
           "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
         extras: [// Show this under Overview in bullet points
@@ -269,7 +315,7 @@ export default [
         {
           fields: {
             file: {
-              url: img2
+              url: img5
             }
           }
         },
@@ -306,11 +352,20 @@ export default [
         Hall: "Nagueshi Temple Hall",// used in browse page of all venues(with filters) & each venue browse page
         type: "Temple Hall", //Filter
         events: ["Wedding", "Thread Ceremony"],//Filter
+        wedding:true,
+        birthday: false,
+        threadceremony:true,
+        anniversary:false,
+        others:false,
+        officeconferences:false,
         food: ["Veg only"],//Filter
+        veg: true,
+        nveg: false,
+        anveg: false,
         price: 8000,//Filter
         discount: 15,// use this for showing discounted rates from original rate
         capacity: 500,//Filter
-        featured: true,// these will show up in main page
+        featured: false,// these will show up in main page
         description:// Description used in Venue overview page
           "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
         extras: [// Show this under Overview in bullet points
@@ -325,7 +380,7 @@ export default [
         {
           fields: {
             file: {
-              url: img2
+              url: img6
             }
           }
         },
@@ -362,11 +417,20 @@ export default [
         Hall: "Dattaraj Hall",// used in browse page of all venues(with filters) & each venue browse page
         type: "Private Hall", //Filter
         events: ["Wedding", "Thread Ceremony"],//Filter
+        wedding:true,
+        birthday: false,
+        threadceremony:true,
+        anniversary:false,
+        others:false,
+        officeconferences:false,
         food: ["Veg only"],//Filter
+        veg: true,
+        nveg: false,
+        anveg: false,
         price: 5000,//Filter
         discount: 15,// use this for showing discounted rates from original rate
         capacity: 100,//Filter
-        featured: true,// these will show up in main page
+        featured: false,// these will show up in main page
         description:// Description used in Venue overview page
           "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
         extras: [// Show this under Overview in bullet points
@@ -381,7 +445,7 @@ export default [
         {
           fields: {
             file: {
-              url: img2
+              url: img7
             }
           }
         },
