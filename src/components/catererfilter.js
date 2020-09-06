@@ -1,13 +1,13 @@
 import React from "react";
 import { useContext } from "react";
-import { VenueContext } from "../context"; //to be changed
+import { CatererContext } from "../contextct"; //to be changed
 // import Title from "./Title";
 // get all unique values
 const getUnique = (items, value) => {
   return [...new Set(items.map(item => item[value]))];
 };
 
-const CatererFilter = ({ Venue }) => {
+const CatererFilter = ({ Caterer }) => {
   // react hooks
   const context = useContext(CatererContext);
   const {
@@ -22,23 +22,7 @@ const CatererFilter = ({ Venue }) => {
     snveg
   } = context;
 
-  // get unique types
-  let types = getUnique(Venue, "type");
-  // add all
-  types = ["all", ...types];
-  // map to jsx
-  types = types.map((item, index) => (
-    <option key={index} value={item}>
-      {item}
-    </option>
-  ));
-  // get unique capacity
-  let people = getUnique(Venue, "capacity");
-  people = people.map((item, index) => (
-    <option key={index} value={item}>
-      {item}
-    </option>
-  ));
+  // get unique location
   return (
     <section className="filter-container">
       {/* <Title title="Filter By:" /> */}

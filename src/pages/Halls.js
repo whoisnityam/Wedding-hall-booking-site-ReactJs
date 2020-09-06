@@ -5,7 +5,7 @@ import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
 import {VenueContext} from '../context'
 import StyledHero from "../components/StyledHero"
-import Form from "../components/Form"
+import Form from "../components/Forms"
 
 import Title from '../components/Title'
 export default class Halls extends Component {
