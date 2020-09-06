@@ -5,7 +5,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {VenueProvider} from './context'
-// import  {data} from './components/Form'
+
 
 
 ReactDOM.render(
@@ -20,9 +20,15 @@ ReactDOM.render(
 
 // const express = require('express');
 // const bodyParser = require("body-parser");
+
+//  const nodemailer = require('nodemailer');
+// const cors = require('cors');
+
+
 // const nodemailer = require('nodemailer');
 // const cors = require('cors');
 // // console.log(data);
+
 
 // const app=express();
 
@@ -32,54 +38,14 @@ ReactDOM.render(
 
 
 // app.get('/', ()=>{
-//      this.res.send('welcome to my forma');
+
+//     this.res.send('welcome to my forma');
+
 // })
 
 // app.post('/api/forma', (req,res)=>{
 
 // let data=req.body;
-
-// let Transporter = nodemailer.createTransport({
-//    service:'Gmail' ,
-//    auth:{
-//     user:'redkernityam@gmail.com',
-//     pass:"galopoula@21@21"
-//    }
-// });
-
-
-// let mailOptions={
-//     from:'redkernityam@gmail.com' ,
-//     to:'nityam7rocks@gmail.com',
-//     subject:`Message from ${data.firstname}`,
-//     html:`
-    
-//     <h3>Informations</h3>
-//     <ul>
-//       <li>Date: ${data.date}</li>
-//       <li>Name: ${data.firstname}</li>
-//       <li>Lastname: ${data.lastname}</li>
-//       <li>Email: ${data.email}</li>
-//       <li>Phone: ${data.phone}</li>
-    
-//     </ul> 
-
-    
-//     `
-
-// };
-
-// Transporter.sendMail(mailOptions, (error, response)=>{
-  
-//     if(error){
-//         alert(error)
-//     }
-//     else{
-//         alert('Success')
-//     }
-
-//     Transporter.close();
-// })
 
 
 

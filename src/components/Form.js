@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
+//import axios from 'axios';
+
+const data={}
+
+
+
+  class Form extends Component {
+
+  
 import axios from 'axios';
 
 // var data={};
- export default class Form extends Component {
- 
- 
+ export default class Form extends Component 
 
 state={
     date:'',
@@ -54,6 +61,37 @@ handlePhone = (e)=>{
 
 
 
+
+// formSubmit=(e)=>{
+//   e.preventDefault();
+ 
+ 
+  
+//     data = {
+//     date:this.state.date,
+//     firstname:this.state.firstname,
+//     lastname:this.state.lastname,
+//     email:this.state.email,
+//     phone:this.state.phone
+//   }
+// console.log("data");
+// console.log(data);
+
+
+  
+  // axios.post('/api/forma',data)
+  // .then(res=>{
+  //   this.setState({
+  //     sent:true,
+  //   },this.resetForm())
+  // })
+  // .catch(()=>{
+  //   console.log('message not send');
+    
+  // })
+  
+ 
+ //}
 
 formSubmit=(e)=>{
   e.preventDefault();
@@ -156,4 +194,5 @@ resetForm=()=>{
     }
 }
 
+export {data,Form};
 // export {Form, data};

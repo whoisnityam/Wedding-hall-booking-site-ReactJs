@@ -10,6 +10,7 @@ import {Route, Switch} from 'react-router-dom';
 function App() {
   return (
      <>
+    
      <Navbar></Navbar>
     <Switch> 
      <Route exact path= "/" component={Home}/>
@@ -17,7 +18,9 @@ function App() {
      <Route exact path= "/Caterers" component={Caterers}/>
      <Route exact path="/Venues/:Hall" component={Halls}/>
      <Route component={Error}/>
-    </Switch> 
+     
+    </Switch>
+    
      </>
   );
 }

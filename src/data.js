@@ -24,7 +24,7 @@ export default [
       wedding:true,
       birthday: true,
       threadceremony:true,
-       anniversary:true,
+      anniversary:true,
       others:true,
       officeconferences:false,
       food: ["Veg only", "Veg/NonVeg"],//Filter

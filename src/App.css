@@ -424,6 +424,9 @@ h6 {
 /* venuelist */
 .Venuelist {
   padding: 5rem 0;
+  float: right;
+  /* width: 80%; */
+  height: 30%;
   float: left;
   width: 500px;
   /* height: 30%; */
@@ -467,6 +470,7 @@ input[type=submit]{
 }
 
 label{
+  text-align: right;
   text-align: left;
 }
 
