@@ -3,10 +3,8 @@ import defaultBcg from '../images/Venue2.jpg'
 // import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
-import {VenueContext} from '../context'
+import {CatererContext} from '../contextct'
 import StyledHero from "../components/StyledHero"
-import Form from "../components/Form"
-
 import Title from '../components/Title'
 export default class Halls extends Component {
   constructor(props){
@@ -16,19 +14,19 @@ export default class Halls extends Component {
     };
   }
 
-  static contextType=VenueContext;
+  static contextType=CatererContext;
   // componentDidMount()
 
 
   render() {
-    const { getVenue }=this.context;
-    const venue = getVenue(this.state.Hall);
+    const { getCaterer }=this.context;
+    const caterer = getCaterer(this.state.name);
 
-    if(!venue){
+    if(!caterer){
       return( <div className='error'>
-     <h3> No such Venue Available...</h3>
-         <Link to='/Venues' className='btn-primary'>
-         Back to Venue
+     <h3> No such Caterers Available...</h3>
+         <Link to='/Caterers' className='btn-primary'>
+         Back to Caterers
          </Link>
        </div>
       );
@@ -36,7 +34,7 @@ export default class Halls extends Component {
     const {name,
       description,
       capacity,
-      type,
+      location,
       price,
       extras,
       events,
@@ -47,9 +45,9 @@ export default class Halls extends Component {
     return (
       <>
       <StyledHero img={images[0] || this.state.defaultBcg}>
-        <Banner title={`${name} venue`}>
-          <Link to="/Venues" className='btn-primary'>
-            Back to rooms
+        <Banner title={`${name} Caterers`}>
+          <Link to="/Caterers" className='btn-primary'>
+            Back to Caterers
           </Link>
         </Banner>
       </StyledHero>
@@ -67,7 +65,7 @@ export default class Halls extends Component {
             <article className="info">
               <h3>info</h3>
               <h6>price : Rs{price}</h6>
-              <h6>type : {type} SQFT</h6>
+              <h6>location : {location} </h6>
 
               <h6>max capacity : {capacity} people
               </h6>
@@ -77,7 +75,7 @@ export default class Halls extends Component {
           </div>
         </section>
         <section className="venue-extras">
-          <h6>extras </h6>
+          <h6>Veg Menu </h6>
           <ul className="extras">
             {extras.map((item, index) => (
               <li key={index}>- {item}</li>
@@ -85,7 +83,7 @@ export default class Halls extends Component {
           </ul>
         </section>
         <section className="venue-extras">
-          <h6>Events </h6>
+          <h6>Non Veg Menu (Chicken/Muttun) </h6>
           <ul className="extras">
             {events.map((item, index) => (
               <li key={index}>- {item}</li>
@@ -93,7 +91,7 @@ export default class Halls extends Component {
           </ul>
         </section>
         <section className="venue-extras">
-          <h6>Foods </h6>
+          <h6>Non Veg Menu (Seafood) </h6>
           <ul className="extras">
             {food.map((item, index) => (
               <li key={index}>- {item}</li>
@@ -101,11 +99,6 @@ export default class Halls extends Component {
           </ul>
         </section>
 
-        <section className="BForm">
-          <Title title="Reservation Details"/><br/>
-          <Form/>
-
-        </section>
       </>
     )
  }

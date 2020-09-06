@@ -10,7 +10,7 @@ export default function Venue1({venue}) {
       <div className='img-container'>
         <img src={images[0] || defaultImg} alt="Featured Venue"/>
         <div className='price-top'>
-          <h6>${price}</h6>
+          <h6>Rs{price}</h6>
           <p>per day</p>
         </div>
         <Link to={`/Venues/${Hall}`} className="btn-primary venue-link">Features</Link>
