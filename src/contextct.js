@@ -19,13 +19,13 @@ class CatererProvider extends Component {
   };
 //getdata
   componentDidMount(){
-    let Caterer=this.formatData(items)
+    let caterer=this.formatData(items)
    // let featuredVenue=Venue.filter(venue=>venue.featured===true);
-    let maxPrice=Math.max(...Caterer.map(item=>item.price));
+    let maxPrice=Math.max(...caterer.map(item=>item.price));
 
     this.setState({
-      Caterer,
-      sortedCaterer:Caterer,
+      caterer,
+      sortedCaterer:caterer,
       loading: false,
       price: maxPrice,
       maxPrice
@@ -106,7 +106,7 @@ if(nalc){
   };
   
   getCaterer = (name) => {
-    let tempCaterer = [...this.state.Caterer];
+    let tempCaterer = [...this.state.caterer];
     const caterer = tempCaterer.find(caterer => caterer.name === name);
     return caterer;
   }
